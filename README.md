@@ -49,18 +49,16 @@ Module ini menyediakan akses untuk beberapa variabel yang digunakan atau dimaint
 OS merupakan sebuah library dalam python yang menyediakan suatu cara portable dalam menggunakan fungsi yang bergantung pada operating system.
 
 Beberapa contoh dalam library ini adalah:
-
-•	open(), yang berguna untuk membuka atau memodifikasi suatu files 
-•	os.path yang berguna untuk memanipulasi path
-•	fileinput untuk membaca semua baris dalam semua file pada command line
-•	tempfile untuk membuat temporary files dan directories
+- open(), yang berguna untuk membuka atau memodifikasi suatu files 
+- os.path yang berguna untuk memanipulasi path
+- fileinput untuk membaca semua baris dalam semua file pada command line
+- tempfile untuk membuat temporary files dan directories
 
 Hal yang harus dicatat dalam ketersediaan fungsi pada library ini:
-
-•	Desain dari semua modul Python bergantung pada sistem operasi bawaan sedemikian rupa sehingga selama fungsionalitas yang sama tersedia, ia menggunakan interface yang sama.
-•	Ekstensi khusus untuk sistem operasi tertentu juga tersedia melalui modul os, tetapi menggunakannya tentu saja merupakan ancaman bagi portabilitas.
-•	Semua fungsi yang menerima nama path atau file menerima objek byte dan string, dan menghasilkan objek dengan tipe yang sama, jika path atau nama file dikembalikan.
-•	Pada VxWorks, os.fork, os.execv dan os.spawn*p* tidak didukung.
+- Desain dari semua modul Python bergantung pada sistem operasi bawaan sedemikian rupa sehingga selama fungsionalitas yang sama tersedia, ia menggunakan interface yang sama.
+- Ekstensi khusus untuk sistem operasi tertentu juga tersedia melalui modul os, tetapi menggunakannya tentu saja merupakan ancaman bagi portabilitas.
+- Semua fungsi yang menerima nama path atau file menerima objek byte dan string, dan menghasilkan objek dengan tipe yang sama, jika path atau nama file dikembalikan.
+- Pada VxWorks, os.fork, os.execv dan os.spawn*p* tidak didukung.
 
 5. Ipython
 Salah satu dari fitur utama python adalah interpreternya yang interaktif. Hal tersebut memungkinkan untuk testing suatu hal secara cepat tanpa harus membuat test files sebagaimana bahasa pemrograman yang lain. Akan tetapi, interpreter yang didukung oleh distribusi standar python mempunyai Batasan bagi penggunaan yang interaktif.
